@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChallengeIntuit-Backend</name>
+    </assembly>
+    <members>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes">
+            <summary>
+            Obtiene el listado completo de clientes.
+            </summary>
+            <returns>Una lista de clientes.</returns>
+            <response code="200">Retorna la lista de clientes</response>
+            <response code="500">Si ocurre un error interno en el servidor</response>
+        </member>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.GetCliente(System.Int32)">
+            <summary>
+            Obtiene un cliente específico por su ID.
+            </summary>
+            <param name="id">El ID del cliente a buscar.</param>
+            <returns>El objeto cliente si es encontrado.</returns>
+            <response code="200">Retorna el cliente solicitado</response>
+            <response code="404">Si el cliente no existe</response>
+        </member>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes(System.String)">
+            <summary>
+            Busca clientes por nombre o apellido utilizando un Stored Procedure.
+            </summary>
+            <param name="texto">Texto a buscar dentro del nombre o apellido.</param>
+            <returns>Lista de clientes que coinciden.</returns>
+            <response code="200">Retorna los clientes encontrados</response>
+            <response code="400">Si no se envía texto de búsqueda</response>
+            <response code="404">Si no se encuentran coincidencias</response>
+        </member>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.PostCliente(ChallengeIntuit.Backend.Models.ClienteDto)">
+            <summary>
+            Crea un nuevo cliente en la base de datos.
+            </summary>
+            <param name="clienteDto">Datos del cliente a crear.</param>
+            <returns>El cliente creado con su ID asignado.</returns>
+            <response code="201">Cliente creado exitosamente</response>
+            <response code="400">Si el CUIT o Email ya existen, o los datos son inválidos</response>
+        </member>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente(System.Int32,ChallengeIntuit.Backend.Models.ClienteDto)">
+            <summary>
+            Actualiza los datos de un cliente existente.
+            </summary>
+            <param name="id">ID del cliente a actualizar.</param>
+            <param name="clienteDto">Nuevos datos del cliente.</param>
+            <response code="204">Actualización exitosa (sin contenido)</response>
+            <response code="404">Si el cliente no existe</response>
+        </member>
+        <member name="M:ChallengeIntuit.Backend.Controllers.ClientesController.DeleteCliente(System.Int32)">
+            <summary>
+            Elimina un cliente por su ID.
+            </summary>
+            <param name="id">ID del cliente a eliminar.</param>
+            <response code="204">Eliminación exitosa</response>
+            <response code="404">Si el cliente no existe</response>
+        </member>
+    </members>
+</doc>

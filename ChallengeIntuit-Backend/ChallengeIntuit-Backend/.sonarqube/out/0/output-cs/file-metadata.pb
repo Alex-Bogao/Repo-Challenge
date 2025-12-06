@@ -1,0 +1,10 @@
+£
+óC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.MvcApplicationPartsAssemblyInfo.csutf-8ê
+ÑC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.AssemblyInfo.csutf-8ó
+ãC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8í
+ÜC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.GlobalUsings.g.csutf-8_
+VC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Program.csutf-8i
+`C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Models\ClienteDto.csutf-8f
+]C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Models\Cliente.csutf-8v
+mC:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Controllers\ClientesController.csutf-8i
+`C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Data\AppDbContext.csutf-8

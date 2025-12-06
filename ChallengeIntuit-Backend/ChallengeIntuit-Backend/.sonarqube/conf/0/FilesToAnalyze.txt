@@ -1,0 +1,14 @@
+﻿C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Controllers\ClientesController.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Data\AppDbContext.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Models\Cliente.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Models\ClienteDto.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Program.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.GlobalUsings.g.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.AssemblyInfo.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\obj\Debug\net8.0\ChallengeIntuit-Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\appsettings.Development.json
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\appsettings.json
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\ChallengeIntuit-Backend.http
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\logs\log-20251206.txt
+C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend\Properties\launchSettings.json

@@ -1,0 +1,6 @@
+projectKey=challenge-backend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=challenge-backend
+ceTaskId=a0fb1313-91a4-46bb-9d41-11a4fb04761f
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a0fb1313-91a4-46bb-9d41-11a4fb04761f

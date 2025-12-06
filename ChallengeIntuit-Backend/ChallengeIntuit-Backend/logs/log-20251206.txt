@@ -1,0 +1,583 @@
+2025-12-06 14:08:09.251 -03:00 [INF] Now listening on: http://localhost:5070
+2025-12-06 14:08:09.375 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-06 14:08:09.379 -03:00 [INF] Hosting environment: Development
+2025-12-06 14:08:09.379 -03:00 [INF] Content root path: C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend
+2025-12-06 14:08:10.190 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2025-12-06 14:08:10.342 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 158.2092ms
+2025-12-06 14:08:10.366 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2025-12-06 14:08:10.366 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-06 14:08:10.372 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16531 application/javascript; charset=utf-8 6.3064ms
+2025-12-06 14:08:10.394 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.5303ms
+2025-12-06 14:08:10.443 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2025-12-06 14:08:10.459 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.4062ms
+2025-12-06 14:08:14.204 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes - null null
+2025-12-06 14:08:14.210 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-12-06 14:08:14.215 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 14:08:14.231 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 14:08:14.978 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 14:08:15.043 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 14:08:15.062 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 827.389ms
+2025-12-06 14:08:15.063 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 14:08:15.071 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes - 200 null application/json; charset=utf-8 867.3807ms
+2025-12-06 14:09:40.458 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5070/api/Clientes/Delete/789 - null null
+2025-12-06 14:09:40.461 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.DeleteCliente (ChallengeIntuit-Backend)'
+2025-12-06 14:09:40.473 -03:00 [INF] Route matched with {action = "DeleteCliente", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCliente(Int32) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 14:09:40.614 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+WHERE `c`.`id` = @__p_0
+LIMIT 1
+2025-12-06 14:09:40.617 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-06 14:09:40.631 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.DeleteCliente (ChallengeIntuit-Backend) in 157.3658ms
+2025-12-06 14:09:40.633 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.DeleteCliente (ChallengeIntuit-Backend)'
+2025-12-06 14:09:40.634 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5070/api/Clientes/Delete/789 - 404 null application/json; charset=utf-8 176.0731ms
+2025-12-06 14:59:52.134 -03:00 [INF] Now listening on: http://localhost:5070
+2025-12-06 14:59:52.252 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-06 14:59:52.253 -03:00 [INF] Hosting environment: Development
+2025-12-06 14:59:52.254 -03:00 [INF] Content root path: C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend
+2025-12-06 14:59:52.845 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2025-12-06 14:59:53.027 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 191.0903ms
+2025-12-06 14:59:53.046 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-06 14:59:53.046 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2025-12-06 14:59:53.052 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16531 application/javascript; charset=utf-8 5.9673ms
+2025-12-06 14:59:53.077 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.1345ms
+2025-12-06 14:59:53.122 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2025-12-06 14:59:53.145 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.5658ms
+2025-12-06 15:01:39.526 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes - null null
+2025-12-06 15:01:39.533 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-12-06 15:01:39.536 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:39.560 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:01:40.523 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:01:40.594 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:01:40.611 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 1047.5178ms
+2025-12-06 15:01:40.613 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:40.620 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes - 200 null application/json; charset=utf-8 1093.8308ms
+2025-12-06 15:01:57.091 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:01:57.094 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:01:57.097 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:57.098 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:01:57.125 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:01:57.127 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:01:57.129 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 29.8043ms
+2025-12-06 15:01:57.130 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:57.130 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:01:57.131 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 40.4826ms
+2025-12-06 15:01:57.133 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:01:57.134 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:57.135 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:01:57.189 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:01:57.191 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:01:57.192 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 55.3752ms
+2025-12-06 15:01:57.193 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:01:57.193 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 63.0903ms
+2025-12-06 15:02:48.348 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=J - null null
+2025-12-06 15:02:48.352 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:02:48.353 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:02:48.360 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:02:48.498 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:02:48.500 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 137.9514ms
+2025-12-06 15:02:48.500 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:02:48.501 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=J - 200 null application/json; charset=utf-8 182.5339ms
+2025-12-06 15:02:50.555 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:02:50.557 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:02:50.557 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:02:50.558 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:02:50.568 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:02:50.573 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:02:50.574 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 13.9961ms
+2025-12-06 15:02:50.574 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:02:50.575 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 19.7346ms
+2025-12-06 15:05:37.793 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:05:37.794 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:05:37.795 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:05:37.795 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:05:37.806 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:05:37.811 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:05:37.812 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 15.368ms
+2025-12-06 15:05:37.812 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:05:37.812 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:05:37.814 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:05:37.815 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 23.2237ms
+2025-12-06 15:05:37.815 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:05:37.818 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:05:37.823 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:05:37.832 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:05:37.833 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 13.8767ms
+2025-12-06 15:05:37.834 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:05:37.834 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 22.1134ms
+2025-12-06 15:11:19.738 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:11:19.741 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:11:19.741 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:11:19.742 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:11:19.765 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:11:19.766 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:11:19.767 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 23.426ms
+2025-12-06 15:11:19.768 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:11:19.768 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:11:19.769 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 32.9566ms
+2025-12-06 15:11:19.770 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:11:19.772 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:11:19.773 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:11:19.779 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:11:19.784 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:11:19.785 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 11.0691ms
+2025-12-06 15:11:19.786 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:11:19.787 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 18.4534ms
+2025-12-06 15:12:12.563 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:12:12.566 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:12:12.567 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:12.568 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:12:12.578 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:12:12.583 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:12:12.583 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 14.4717ms
+2025-12-06 15:12:12.584 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:12:12.584 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:12.585 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:12:12.586 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 44.6151ms
+2025-12-06 15:12:12.586 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:12.589 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:12:12.595 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:12:12.599 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:12:12.600 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 10.1551ms
+2025-12-06 15:12:12.601 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:12.601 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 17.6213ms
+2025-12-06 15:12:16.417 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=a - null null
+2025-12-06 15:12:16.419 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:12:16.420 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:16.420 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:12:16.434 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:12:16.435 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 12.7085ms
+2025-12-06 15:12:16.436 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:12:16.438 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=a - 200 null application/json; charset=utf-8 20.9829ms
+2025-12-06 15:18:12.893 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:18:12.894 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:18:12.895 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:18:12.896 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:18:12.911 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:18:12.913 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:18:12.914 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 17.1364ms
+2025-12-06 15:18:12.915 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:18:12.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 22.7312ms
+2025-12-06 15:29:19.547 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:19.552 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:19.552 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:19.553 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:19.573 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:19.574 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:19.575 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 21.1355ms
+2025-12-06 15:29:19.576 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:19.576 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:19.577 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 30.0231ms
+2025-12-06 15:29:19.578 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:19.580 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:19.581 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:19.586 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:19.592 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:19.593 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 11.2021ms
+2025-12-06 15:29:19.594 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:19.594 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 18.1014ms
+2025-12-06 15:29:29.388 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:29.389 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:29.389 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:29.390 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:29.398 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:29.400 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:29.401 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 9.7166ms
+2025-12-06 15:29:29.401 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:29.402 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:29.403 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:29.404 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 16.2534ms
+2025-12-06 15:29:29.404 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:29.406 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:29.414 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:29.415 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:29.416 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 8.5811ms
+2025-12-06 15:29:29.417 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:29.418 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 16.199ms
+2025-12-06 15:29:30.310 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:30.311 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:30.312 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:30.312 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:30.321 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:30.322 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:30.323 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 9.739ms
+2025-12-06 15:29:30.324 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:29:30.324 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:30.326 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:29:30.326 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 16.4995ms
+2025-12-06 15:29:30.327 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:30.329 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:29:30.335 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:29:30.336 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:29:30.337 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 6.8211ms
+2025-12-06 15:29:30.338 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:29:30.338 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 14.4602ms
+2025-12-06 15:42:03.331 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:42:03.332 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:42:03.333 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:42:03.333 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:42:03.352 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:42:03.354 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:42:03.355 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 20.1767ms
+2025-12-06 15:42:03.357 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:42:03.358 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 15:42:03.361 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 29.974ms
+2025-12-06 15:42:03.363 -03:00 [INF] CORS policy execution successful.
+2025-12-06 15:42:03.365 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:42:03.365 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 15:42:03.371 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 15:42:03.373 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 15:42:03.373 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 6.945ms
+2025-12-06 15:42:03.374 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 15:42:03.375 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 16.7494ms
+2025-12-06 16:24:13.755 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:24:13.758 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:24:13.762 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:24:13.764 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:24:13.764 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:24:13.764 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:24:13.765 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:24:13.766 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:24:13.797 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:24:13.797 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:24:13.800 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:24:13.801 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:24:13.802 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 34.0279ms
+2025-12-06 16:24:13.803 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 35.9805ms
+2025-12-06 16:24:13.804 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:24:13.805 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:24:13.805 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 48.1839ms
+2025-12-06 16:24:13.806 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 53.7039ms
+2025-12-06 16:26:09.817 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Insert - null null
+2025-12-06 16:26:09.818 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:09.820 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Insert - 204 null null 3.1977ms
+2025-12-06 16:26:09.825 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5070/api/Clientes/Insert - application/json 177
+2025-12-06 16:26:09.827 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:09.827 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PostCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:26:09.832 -03:00 [INF] Route matched with {action = "PostCliente", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChallengeIntuit.Backend.Models.Cliente]] PostCliente(ChallengeIntuit.Backend.Models.ClienteDto) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:26:09.948 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clienteDto_Cuit_0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `clientes` AS `c`
+    WHERE `c`.`cuit` = @__clienteDto_Cuit_0)
+2025-12-06 16:26:09.955 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clienteDto_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `clientes` AS `c`
+    WHERE `c`.`email` = @__clienteDto_Email_0)
+2025-12-06 16:26:10.060 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 20), @p2='?' (Size = 150), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 100), @p7='?' (Size = 150), @p8='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `clientes` (`apellido`, `cuit`, `email`, `fecha_creacion`, `fecha_modificacion`, `fecha_nacimiento`, `nombre`, `razon_social`, `telefono_celular`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `id`
+FROM `clientes`
+WHERE ROW_COUNT() = 1 AND `id` = LAST_INSERT_ID();
+2025-12-06 16:26:10.092 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'ChallengeIntuit.Backend.Models.Cliente'.
+2025-12-06 16:26:10.107 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.PostCliente (ChallengeIntuit-Backend) in 274.4351ms
+2025-12-06 16:26:10.109 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PostCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:26:10.110 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5070/api/Clientes/Insert - 201 null application/json; charset=utf-8 284.2112ms
+2025-12-06 16:26:10.125 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:26:10.126 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:10.126 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:10.127 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:26:10.133 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:26:10.134 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:26:10.135 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 7.1928ms
+2025-12-06 16:26:10.136 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:10.137 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 12.287ms
+2025-12-06 16:26:16.474 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - null null
+2025-12-06 16:26:16.476 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:16.477 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:16.478 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:26:16.490 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:26:16.491 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 10.7621ms
+2025-12-06 16:26:16.492 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:16.493 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - 200 null application/json; charset=utf-8 18.4202ms
+2025-12-06 16:26:18.335 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:26:18.336 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:18.337 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:18.338 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:26:18.346 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:26:18.347 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:26:18.348 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 8.7834ms
+2025-12-06 16:26:18.348 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:18.349 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 14.4196ms
+2025-12-06 16:26:43.545 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:26:43.548 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:26:43.549 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:43.549 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:26:43.560 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:26:43.561 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:26:43.562 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 11.5123ms
+2025-12-06 16:26:43.563 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:26:43.564 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 18.1684ms
+2025-12-06 16:27:21.447 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:21.449 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:21.449 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:21.450 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:21.459 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:21.464 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:21.465 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 13.9946ms
+2025-12-06 16:27:21.466 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:21.466 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 22.5519ms
+2025-12-06 16:27:25.068 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - null null
+2025-12-06 16:27:25.069 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:25.070 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:25.071 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:25.076 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:25.077 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 5.4585ms
+2025-12-06 16:27:25.078 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:25.079 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - 200 null application/json; charset=utf-8 10.7268ms
+2025-12-06 16:27:25.790 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:25.791 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:25.793 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:25.794 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:25.801 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:25.806 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:25.807 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 10.8724ms
+2025-12-06 16:27:25.808 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:25.808 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 18.4098ms
+2025-12-06 16:27:31.881 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:31.883 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:31.883 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:31.884 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:31.890 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:31.895 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:31.896 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 11.0101ms
+2025-12-06 16:27:31.897 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:31.898 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 16.8967ms
+2025-12-06 16:27:35.923 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Juan - null null
+2025-12-06 16:27:35.925 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:35.925 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:35.926 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:35.931 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:35.932 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 4.9848ms
+2025-12-06 16:27:35.933 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:35.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Juan - 200 null application/json; charset=utf-8 10.7621ms
+2025-12-06 16:27:38.954 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:38.956 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:38.956 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:38.957 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:38.963 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:38.965 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:38.965 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 6.9675ms
+2025-12-06 16:27:38.966 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:38.967 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 12.4908ms
+2025-12-06 16:27:50.293 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Update/6 - null null
+2025-12-06 16:27:50.294 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:50.295 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Update/6 - 204 null null 1.8166ms
+2025-12-06 16:27:50.296 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5070/api/Clientes/Update/6 - application/json 266
+2025-12-06 16:27:50.297 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:50.298 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:27:50.306 -03:00 [INF] Route matched with {action = "PutCliente", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutCliente(Int32, ChallengeIntuit.Backend.Models.ClienteDto) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:50.335 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+WHERE `c`.`id` = @__p_0
+LIMIT 1
+2025-12-06 16:27:50.352 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `clientes` SET `fecha_modificacion` = @p0, `razon_social` = @p1
+WHERE `id` = @p2;
+SELECT ROW_COUNT();
+2025-12-06 16:27:50.357 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-06 16:27:50.357 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend) in 50.6593ms
+2025-12-06 16:27:50.358 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:27:50.359 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5070/api/Clientes/Update/6 - 204 null null 62.612ms
+2025-12-06 16:27:50.375 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:50.376 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:50.377 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:50.377 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:50.383 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:50.385 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:50.386 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 7.1431ms
+2025-12-06 16:27:50.386 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:50.387 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 12.0096ms
+2025-12-06 16:27:55.657 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Update/6 - null null
+2025-12-06 16:27:55.658 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:55.659 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5070/api/Clientes/Update/6 - 204 null null 2.0372ms
+2025-12-06 16:27:55.661 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5070/api/Clientes/Update/6 - application/json 264
+2025-12-06 16:27:55.662 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:55.662 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:27:55.663 -03:00 [INF] Route matched with {action = "PutCliente", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutCliente(Int32, ChallengeIntuit.Backend.Models.ClienteDto) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:55.672 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+WHERE `c`.`id` = @__p_0
+LIMIT 1
+2025-12-06 16:27:55.694 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `clientes` SET `fecha_modificacion` = @p0, `razon_social` = @p1
+WHERE `id` = @p2;
+SELECT ROW_COUNT();
+2025-12-06 16:27:55.696 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-06 16:27:55.696 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend) in 31.3905ms
+2025-12-06 16:27:55.697 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.PutCliente (ChallengeIntuit-Backend)'
+2025-12-06 16:27:55.698 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5070/api/Clientes/Update/6 - 204 null null 37.1621ms
+2025-12-06 16:27:55.714 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:27:55.715 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:27:55.715 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:55.716 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:27:55.722 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:27:55.723 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:27:55.724 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 6.7603ms
+2025-12-06 16:27:55.725 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:27:55.726 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 11.9361ms
+2025-12-06 16:30:38.371 -03:00 [INF] Now listening on: http://localhost:5070
+2025-12-06 16:30:38.514 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-06 16:30:38.515 -03:00 [INF] Hosting environment: Development
+2025-12-06 16:30:38.515 -03:00 [INF] Content root path: C:\Users\samtr\source\repos\ChallengeIntuit-Backend\ChallengeIntuit-Backend
+2025-12-06 16:30:39.554 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2025-12-06 16:30:39.713 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 166.9278ms
+2025-12-06 16:30:39.733 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2025-12-06 16:30:39.733 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-06 16:30:39.740 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16531 application/javascript; charset=utf-8 7.4922ms
+2025-12-06 16:30:39.763 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.2493ms
+2025-12-06 16:30:39.808 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2025-12-06 16:30:39.825 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.6608ms
+2025-12-06 16:32:15.083 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=A - null null
+2025-12-06 16:32:15.091 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:32:15.093 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-12-06 16:32:15.096 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:15.116 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:32:15.514 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:32:15.528 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 407.3634ms
+2025-12-06 16:32:15.529 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:15.532 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=A - 200 null application/json; charset=utf-8 448.4289ms
+2025-12-06 16:32:21.344 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=alex - null null
+2025-12-06 16:32:21.347 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:32:21.347 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:21.348 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:32:21.364 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:32:21.365 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 16.1004ms
+2025-12-06 16:32:21.366 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:21.367 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=alex - 200 null application/json; charset=utf-8 23.0695ms
+2025-12-06 16:32:24.146 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:32:24.148 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:32:24.149 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:24.152 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:32:24.695 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:32:24.749 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:32:24.753 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 599.4982ms
+2025-12-06 16:32:24.753 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:24.759 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 612.6076ms
+2025-12-06 16:32:30.662 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Juan - null null
+2025-12-06 16:32:30.664 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:32:30.664 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:30.665 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:32:30.671 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:32:30.672 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 6.0096ms
+2025-12-06 16:32:30.673 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:30.673 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Juan - 200 null application/json; charset=utf-8 11.6655ms
+2025-12-06 16:32:32.960 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:32:32.962 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:32:32.962 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:32.963 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:32:32.980 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:32:32.982 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:32:32.983 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 19.1898ms
+2025-12-06 16:32:32.984 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:32:32.984 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 24.4518ms
+2025-12-06 16:33:33.496 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - null null
+2025-12-06 16:33:33.501 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:33:33.501 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:33.502 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:33:33.512 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:33:33.513 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 10.5542ms
+2025-12-06 16:33:33.514 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:33.515 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - 200 null application/json; charset=utf-8 19.2029ms
+2025-12-06 16:33:35.771 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:33:35.773 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:33:35.773 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:35.774 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:33:35.824 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:33:35.829 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:33:35.830 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 54.5164ms
+2025-12-06 16:33:35.830 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:35.831 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 59.5861ms
+2025-12-06 16:33:46.376 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - null null
+2025-12-06 16:33:46.378 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:33:46.378 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:46.379 -03:00 [INF] Route matched with {action = "SearchClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] SearchClientes(System.String) on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:33:46.385 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:33:46.386 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend) in 6.2387ms
+2025-12-06 16:33:46.387 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.SearchClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:46.388 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/Buscar?texto=Alex - 200 null application/json; charset=utf-8 11.8575ms
+2025-12-06 16:33:54.590 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/api/Clientes/ - null null
+2025-12-06 16:33:54.592 -03:00 [INF] CORS policy execution successful.
+2025-12-06 16:33:54.592 -03:00 [INF] Executing endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:54.593 -03:00 [INF] Route matched with {action = "GetClientes", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ChallengeIntuit.Backend.Models.Cliente]]] GetClientes() on controller ChallengeIntuit.Backend.Controllers.ClientesController (ChallengeIntuit-Backend).
+2025-12-06 16:33:54.599 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`id`, `c`.`apellido`, `c`.`cuit`, `c`.`email`, `c`.`fecha_creacion`, `c`.`fecha_modificacion`, `c`.`fecha_nacimiento`, `c`.`nombre`, `c`.`razon_social`, `c`.`telefono_celular`
+FROM `clientes` AS `c`
+2025-12-06 16:33:54.601 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChallengeIntuit.Backend.Models.Cliente, ChallengeIntuit-Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-06 16:33:54.602 -03:00 [INF] Executed action ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend) in 7.7199ms
+2025-12-06 16:33:54.602 -03:00 [INF] Executed endpoint 'ChallengeIntuit.Backend.Controllers.ClientesController.GetClientes (ChallengeIntuit-Backend)'
+2025-12-06 16:33:54.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/api/Clientes/ - 200 null application/json; charset=utf-8 12.5893ms
