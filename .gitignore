@@ -1,0 +1,43 @@
+# ---- .NET / C# ----
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.json
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.lock.json
+
+# ---- Visual Studio ----
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+*.csproj.user
+*.dbproj.schemaview
+*.ipch
+*.opendb
+
+# ---- Vite / Node / React ----
+node_modules/
+dist/
+*.local
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Sonar ----
+.sonar/
+.scannerwork/
+
+# ---- Others ----
+Thumbs.db
+desktop.ini
+
+# Allow README
+!README.md
